@@ -2,12 +2,12 @@ package edu.teamRocket.domain;
 
 public class Item {
     private final String name;
-    private int sell_in;
+    private int sellIn;
     private int quality;
 
-    Item(String name, int sell_in, int quality) {
+    Item(String name, int sellIn, int quality) {
         this.name = name;
-        this.sell_in = sell_in;
+        this.sellIn = sellIn;
         this.quality = quality;
     }
 
@@ -15,12 +15,12 @@ public class Item {
         return name;
     }
 
-    int getSell_in() {
-        return sell_in;
+    int getSellIn() {
+        return sellIn;
     }
 
-    void setSell_in(int sell_in) {
-        this.sell_in = sell_in;
+    void setSellIn() {
+        this.sellIn = this.getSellIn() - 1;
     }
 
     int getQuality() {
@@ -33,6 +33,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item: " + getName() + "\nSell in: " + getSell_in() + "\nQuality: " + getQuality();
+        return "Item: " + getName() + "\nSell in: " + getSellIn() + "\nQuality: " + getQuality();
     }
 }

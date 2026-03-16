@@ -14,7 +14,7 @@ public class ItemTest {
 
         // ASSERT
         assertEquals("+5 Dexterity Vest", item.getName());
-        assertEquals(10, item.getSell_in(), 0);
+        assertEquals(10, item.getSellIn(), 0);
         assertEquals(20, item.getQuality(), 0);
         System.out.println(item);
     }

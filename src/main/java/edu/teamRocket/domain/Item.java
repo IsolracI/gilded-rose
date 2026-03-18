@@ -33,6 +33,13 @@ class Item {
 
     @Override
     public String toString() {
-        return "Item: " + getName() + "\nSell in: " + getSellIn() + "\nQuality: " + getQuality();
+        StringBuilder itemInfo = new StringBuilder();
+        itemInfo.append("Item: ")
+                .append(getName())
+                .append(" | Sell In: ")
+                .append(getSellIn())
+                .append(" | Quality: ")
+                .append(getQuality());
+        return itemInfo.toString();
     }
 }

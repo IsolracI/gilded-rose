@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GildedRose {
-    private final List<Updateable> inventory = new ArrayList<Updateable>();
+    private final List<Updateable> inventory = new ArrayList<>();
 
     public GildedRose() {}
 
@@ -27,6 +27,7 @@ public class GildedRose {
         StringBuilder inventory = new StringBuilder();
         for (Updateable item : inventory()) {
             inventory.append(item.toString());
+            inventory.append("\n");
         }
         return inventory.toString();
     }

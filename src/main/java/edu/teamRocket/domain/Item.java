@@ -1,6 +1,6 @@
 package edu.teamRocket.domain;
 
-public class Item {
+class Item {
     private final String name;
     private int sellIn;
     private int quality;
